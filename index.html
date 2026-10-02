@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ANABOLIKA SKYR | Frostige Power & Maximale Proteine</title>
+    <meta name="description" content="Der mächtigste, frischeste und cremigste Protein-Skyr der Welt. 30g Protein pro Becher, eiskalt serviert für maximale Performance.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800;900&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Background Glow & Particles -->
+    <div class="bg-glow"></div>
+    <div class="ice-mist"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="logo">
+            <span class="logo-frost">ANABOLIKA</span>
+            <span class="logo-sub">SKYR</span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#hero">Start</a></li>
+            <li><a href="#stats">Nährwerte</a></li>
+            <li><a href="#taste">Geschmack</a></li>
+            <li><a href="#flavors">Sorten</a></li>
+        </ul>
+        <button class="cta-btn-nav" onclick="orderNow()">JETZT PROBIEREN</button>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero-section">
+        <div class="hero-content">
+            <div class="badge">❄️ FROSTED PROTEIN FORMULA</div>
+            <h1 class="hero-title">EISKALT.<br><span class="glow-text">ANABOL.</span> CREMIG.</h1>
+            <p class="hero-subtitle">
+                30g Reines Protein. 0% Fett. 100% Eiskalte Frische.<br>
+                Der isländische Skyr für maximale Performance und unendlichen Geschmack.
+            </p>
+            <div class="hero-actions">
+                <button class="btn-primary" onclick="orderNow()">
+                    <span>BECHER SICHERN</span>
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                </button>
+                <div class="rating-box">
+                    <div class="stars">★★★★★</div>
+                    <span>4.9 / 5 von über 12.000 Athleten</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="hero-image-wrapper">
+            <div class="ice-aura"></div>
+            <img src="images/product_hero.jpg" alt="Anabolika Skyr Becher Eiskalt" class="hero-img">
+            <div class="float-tag tag-1">
+                <span class="tag-val">30g</span>
+                <span class="tag-lbl">Protein / Becher</span>
+            </div>
+            <div class="float-tag tag-2">
+                <span class="tag-val">-2°C</span>
+                <span class="tag-lbl">Ice-Cooled Taste</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Bar -->
+    <section class="stats-bar">
+        <div class="stat-item">
+            <h2>30g</h2>
+            <p>Natürliches Milchprotein</p>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+            <h2>0.1g</h2>
+            <p>Fett für maximale Definition</p>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+            <h2>100%</h2>
+            <p>Echte Frische & Cremigkeit</p>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+            <h2>< 0.5g</h2>
+            <p>Zuckerzusatz (Natürlich)</p>
+        </div>
+    </section>
+
+    <!-- Detailed Nutrition Table Section -->
+    <section id="stats" class="nutrition-section">
+        <div class="section-header">
+            <h2>NÄHRWERTE & <span class="glow-text">INHALTSSTOFFE</span></h2>
+            <p>Pure Transparenz: Höchste Proteinqualität aus traditionellem isländischem Milchprotein.</p>
+        </div>
+
+        <div class="nutrition-container">
+            <div class="nutrition-card">
+                <h3>Nährwertdeklaration (pro 100g / pro Becher 250g)</h3>
+                <table class="nutrition-table">
+                    <thead>
+                        <tr>
+                            <th>Nährwert</th>
+                            <th>pro 100g</th>
+                            <th>pro Becher (250g)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Energie</strong></td>
+                            <td>242 kJ / 57 kcal</td>
+                            <td>605 kJ / 142.5 kcal</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Fett</strong></td>
+                            <td>0.1 g</td>
+                            <td>0.25 g</td>
+                        </tr>
+                        <tr class="sub-row">
+                            <td>- davon gesättigte Fettsäuren</td>
+                            <td>0.05 g</td>
+                            <td>0.12 g</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Kohlenhydrate</strong></td>
+                            <td>3.8 g</td>
+                            <td>9.5 g</td>
+                        </tr>
+                        <tr class="sub-row">
+                            <td>- davon Zucker (natürlicher Milchzucker)</td>
+                            <td>3.5 g</td>
+                            <td>8.75 g</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Eiweiß (Milchprotein)</strong></td>
+                            <td><strong class="highlight-val">12.0 g</strong></td>
+                            <td><strong class="highlight-val">30.0 g</strong></td>
+                        </tr>
+                        <tr>
+                            <td><strong>Salz</strong></td>
+                            <td>0.08 g</td>
+                            <td>0.20 g</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Calcium</strong></td>
+                            <td>150 mg (19% NRV)</td>
+                            <td>375 mg (47% NRV)</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            
+            <div class="ingredients-box">
+                <h3>Zutaten & Besonderheiten</h3>
+                <p><strong>Zutaten:</strong> Magerstufe-<strong>Skyr</strong> (entrahmte <strong>Milch</strong>, Milchsäurekulturen, mikrobielles Lab), natürliches Aroma, echte gemahlene Bourbon-Vanilleschote / Wildheidelbeeren (je nach Sorte), Süßungsmittel (Steviolglycoside aus Stevia).</p>
+                <div class="ingredients-badges">
+                    <span class="ing-badge">✔️ 100% Isländisches Milchprotein</span>
+                    <span class="ing-badge">✔️ Fettfrei</span>
+                    <span class="ing-badge">✔️ Glutenfrei</span>
+                    <span class="ing-badge">✔️ Vegetarisch</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mouthwatering Taste Experience -->
+    <section id="taste" class="taste-section">
+        <div class="taste-image-container">
+            <img src="images/skyr_bowl.jpg" alt="Anabolika Skyr Bowl mit Heidelbeeren" class="taste-img">
+            <div class="glow-overlay"></div>
+        </div>
+        <div class="taste-content">
+            <div class="badge-cyan">Appetit auf Leistung</div>
+            <h2>MAXIMALE CREMIGKEIT.<br><span class="cyan-text">UNSCHLAGBARE PERFORMANCE.</span></h2>
+            <p>
+                Vergiss trockenen Magerquark oder wässrige Proteindrinks. Anabolika Skyr kombiniert die samtige Textur isländischer Tradition mit der Eiseskälte arktischer Frische. 
+            </p>
+            <ul class="features-list">
+                <li>
+                    <span class="icon">🧊</span>
+                    <div>
+                        <strong>Glasklare Frische:</strong> Kühlt deinen Körper sofort nach dem intensivsten Training.
+                    </div>
+                </li>
+                <li>
+                    <span class="icon">🫐</span>
+                    <div>
+                        <strong>Echte Fruchtstücke & Natürliche Süße:</strong> Kein künstlicher Nachgeschmack, nur pure Aromen.
+                    </div>
+                </li>
+                <li>
+                    <span class="icon">💪</span>
+                    <div>
+                        <strong>Ultra-Mousse Textur:</strong> Extra dick & cremig auf dem Löffel.
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Flavor Showcase Section -->
+    <section id="flavors" class="flavors-section">
+        <div class="section-header">
+            <h2>WÄHLE DEINE <span class="glow-text">FROST-SORTE</span></h2>
+            <p>Jeder Becher ist geladen mit 30g Protein und maximalem Frische-Kick.</p>
+        </div>
+
+        <div class="flavor-grid">
+            <!-- Flavor 1 -->
+            <div class="flavor-card">
+                <div class="flavor-badge">Bestseller</div>
+                <div class="flavor-icon">🫐</div>
+                <h3>Arctic Blueberry</h3>
+                <p>Eiskalte Wildheidelbeere mit arktischem Frische-Glow.</p>
+                <div class="flavor-specs">
+                    <span>30g Protein</span>
+                    <span>145 kcal</span>
+                </div>
+                <button class="btn-card" onclick="selectFlavor('Arctic Blueberry')">In den Warenkorb</button>
+            </div>
+
+            <!-- Flavor 2 -->
+            <div class="flavor-card active">
+                <div class="flavor-badge Highlight">Empfehlung</div>
+                <div class="flavor-icon">🧊</div>
+                <h3>Glacier Vanilla</h3>
+                <p>Samtige Bourbon-Vanille aus der tiefsten Gletscherkälte.</p>
+                <div class="flavor-specs">
+                    <span>31g Protein</span>
+                    <span>140 kcal</span>
+                </div>
+                <button class="btn-card" onclick="selectFlavor('Glacier Vanilla')">In den Warenkorb</button>
+            </div>
+
+            <!-- Flavor 3 -->
+            <div class="flavor-card">
+                <div class="flavor-badge">Neu</div>
+                <div class="flavor-icon">🍓</div>
+                <h3>Frost Raspberry</h3>
+                <p>Knackig-fruchtige Himbeere auf eiskalter Skyr-Basis.</p>
+                <div class="flavor-specs">
+                    <span>30g Protein</span>
+                    <span>142 kcal</span>
+                </div>
+                <button class="btn-card" onclick="selectFlavor('Frost Raspberry')">In den Warenkorb</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interactive CTA Footer Banner -->
+    <section class="cta-banner">
+        <div class="banner-box">
+            <h2>BEREIT FÜR DEN ANABOLEN FRISCHE-KICK?</h2>
+            <p>Bestelle jetzt deine Probierbox mit allen 3 Eiskalt-Sorten gratis geliefert.</p>
+            <button class="btn-primary btn-large" onclick="orderNow()">
+                PROBIERBOX JETZT ANFORDERN (19,90 €)
+            </button>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="logo">
+                <span class="logo-frost">ANABOLIKA</span>
+                <span class="logo-sub">SKYR</span>
+            </div>
+            <p>© 2026 ANABOLIKA SKYR Inc. All rights reserved. Eiskalt servieren.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
